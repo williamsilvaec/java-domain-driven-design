@@ -1,12 +1,13 @@
 package br.com.william.escola.aplicacao.aluno.matricular;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
-
+import br.com.william.escola.dominio.PublicadorDeEventos;
 import br.com.william.escola.dominio.aluno.Aluno;
 import br.com.william.escola.dominio.aluno.CPF;
+import br.com.william.escola.dominio.aluno.LogAlunoMatriculado;
 import br.com.william.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MatricularAlunoTest {
 
@@ -14,7 +15,9 @@ class MatricularAlunoTest {
 	void alunoDeveriaSerPersistido() {
 		// MOCK -> Mockito
 		RepositorioDeAlunosEmMemoria repositorio = new RepositorioDeAlunosEmMemoria();
-		MatricularAluno useCase = new MatricularAluno(repositorio);
+		PublicadorDeEventos publicador = new PublicadorDeEventos();
+		publicador.adicionar(new LogAlunoMatriculado());
+		MatricularAluno useCase = new MatricularAluno(repositorio, publicador);
 		
 		MatricularAlunoDto dados = new MatricularAlunoDto(
 				"Fulano", 
