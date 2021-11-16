@@ -1,10 +1,10 @@
 package br.com.william.escola;
 
-import br.com.william.escola.aplicacao.aluno.matricular.MatricularAluno;
-import br.com.william.escola.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.william.escola.dominio.PublicadorDeEventos;
-import br.com.william.escola.dominio.aluno.LogAlunoMatriculado;
-import br.com.william.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.william.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import br.com.william.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.william.escola.academico.dominio.PublicadorDeEventos;
+import br.com.william.escola.academico.dominio.aluno.LogAlunoMatriculado;
+import br.com.william.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 
 public class MatricularAlunoPorLinhaDeComando {
 	
