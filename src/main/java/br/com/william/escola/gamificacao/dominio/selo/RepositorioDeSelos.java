@@ -1,6 +1,6 @@
 package br.com.william.escola.gamificacao.dominio.selo;
 
-import br.com.william.escola.academico.dominio.aluno.CPF;
+import br.com.william.escola.shared.dominio.CPF;
 
 import java.util.List;
 

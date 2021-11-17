@@ -1,5 +1,6 @@
 package br.com.william.escola.academico.dominio.aluno;
 
+import br.com.william.escola.shared.dominio.CPF;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

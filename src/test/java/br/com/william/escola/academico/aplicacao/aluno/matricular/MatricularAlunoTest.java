@@ -2,7 +2,7 @@ package br.com.william.escola.academico.aplicacao.aluno.matricular;
 
 import br.com.william.escola.academico.dominio.PublicadorDeEventos;
 import br.com.william.escola.academico.dominio.aluno.Aluno;
-import br.com.william.escola.academico.dominio.aluno.CPF;
+import br.com.william.escola.shared.dominio.CPF;
 import br.com.william.escola.academico.dominio.aluno.LogAlunoMatriculado;
 import br.com.william.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 import org.junit.jupiter.api.Test;
