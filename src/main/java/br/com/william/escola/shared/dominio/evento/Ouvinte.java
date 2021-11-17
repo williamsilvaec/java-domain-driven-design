@@ -1,4 +1,4 @@
-package br.com.william.escola.academico.dominio;
+package br.com.william.escola.shared.dominio.evento;
 
 public abstract class Ouvinte {
 

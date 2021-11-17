@@ -1,6 +1,6 @@
 package br.com.william.escola.academico.aplicacao.aluno.matricular;
 
-import br.com.william.escola.academico.dominio.PublicadorDeEventos;
+import br.com.william.escola.shared.dominio.evento.PublicadorDeEventos;
 import br.com.william.escola.academico.dominio.aluno.Aluno;
 import br.com.william.escola.academico.dominio.aluno.AlunoMatriculado;
 import br.com.william.escola.academico.dominio.aluno.RepositorioDeAlunos;
